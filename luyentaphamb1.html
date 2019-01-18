@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>	</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		alertMessage();
+		function alertMessage(){
+		alert("xin chao");
+		}
+	</script>
+	<script>
+		var number =0;
+		function so(number){
+			number+=1;
+			}
+			alert(number);
+           
+	</script>
+	<script>
+		var numbera = parseInt(prompt("nhap so a"));
+		var numberb = parseInt(prompt("nhap so b"));
+		var tong = 0;
+		so ();
+		function so(){
+			if (numbera>numberb){
+			alert("ketquadung");
+			}else if (numbera < numberb){
+			tong = numbera + numberb; 
+			alert(tong);
+			}
+		}
+	</script>
+	<script>function addNumbers() {
+    firstNum = 4;
+    secondNum = 8;
+    result = firstNum + secondNum;
+    alert(result)
+    return result;
+}
+result = 0;
+alert(result);
+result = addNumbers(); 
+</script>
+<script>
+	var nhap = prompt("nhap : ");
+        var tenngoisao = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        var tenchomsao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major",  "Leo"];
+        myFunction();
+        function myFunction(){
+            for (var i=0; i < tenngoisao.length;i++){
+                switch (nhap){
+                    case tenngoisao[i]:
+                    alert(tenchomsao[i]);
+                    break;
+                    case tenchomsao[i]:
+                    alert(tenngoisao[i]);
+                    break;
+                }            
+            }
+        }
+		
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p>
+  <label>do_F</label>
+  <input id="inputdo_F" type="number" placeholder="do_F"
+  oninput="chuyen_doi_nhiet_do(this.value)"
+  onchange="chuyen_doi_nhiet_do(this.value)">
+</p>
+<p>do_C: <span id="outputdo_C "></span></p>
+<script>
+function chuyen_doi_nhiet_do(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputdo_C").innerHTML = (valNum-32) / 1.8;
+}
+</script>
+	
+</body>
+</html>
